@@ -1,14 +1,16 @@
 const express = require("express");
 const app = express();
+const bodyParser = require("body-parser");
 const importData = require("./data.json");
 let port = process.env.PORT || 3000;
+const devicesRoutes = require("./routes/devices");
+
+// middleware
+app.use(bodyParser.json());
+app.use("/devices", devicesRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
-app.get("/devices", (req, res) => {
-  res.send(importData);
+  res.send("This is Homepage");
 });
 
 app.listen(port, () => {
