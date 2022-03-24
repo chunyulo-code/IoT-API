@@ -1,0 +1,32 @@
+[
+  {
+    "name": "IoT_1",
+    "Humidity": 20,
+    "Temperature": 32,
+    "Weather": "sunny"
+  },
+  {
+    "name": "IoT_2",
+    "Humidity": 21,
+    "Temperature": 33,
+    "Weather": "sunny"
+  },
+  {
+    "name": "IoT_3",
+    "Humidity": 22,
+    "Temperature": 34,
+    "Weather": "sunny"
+  },
+  {
+    "name": "IoT_4",
+    "Humidity": 23,
+    "Temperature": 35,
+    "Weather": "sunny"
+  },
+  {
+    "name": "IoT_5",
+    "Humidity": 24,
+    "Temperature": 36,
+    "Weather": "sunny"
+  }
+]
