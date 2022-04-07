@@ -1,0 +1,34 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-image: url(https://picsum.photos/id/235/1920/1080);
+  background-size: cover;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 4rem);
+}
+
+.navbar {
+  height: 4rem;
+}
+
+.container {
+  padding: 5rem;
+}
+
+.container .col {
+  margin: 0.5rem;
+}
+
+.container h1 {
+  color: white;
+  font-size: 5rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
