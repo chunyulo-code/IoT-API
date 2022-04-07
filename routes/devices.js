@@ -4,6 +4,7 @@ const { v4: uuidv4 } = require("uuid");
 const parse = require("nodemon/lib/cli/parse");
 
 router.get("/", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
   res.send(importData);
 });
 
