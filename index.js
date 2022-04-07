@@ -8,10 +8,10 @@ const devicesRoutes = require("./routes/devices");
 
 // middleware
 app.use(bodyParser.json());
-app.use(cors());
 app.use("/devices", devicesRoutes);
 
 app.get("/", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
   res.send("This is Homepage");
 });
 
