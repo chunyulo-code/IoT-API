@@ -17,6 +17,7 @@ router.get("/:deviceNumber", (req, res) => {
 });
 
 router.post("/", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
   const iot = req.body;
   const deviceWithId = { ...iot, deviceId: uuidv4() };
   res.send(`Device with the name of ${iot.name} added to the database!!!`);
