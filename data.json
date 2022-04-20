@@ -61,5 +61,19 @@
     "Humidity": 28,
     "Temperature": 40,
     "Weather": "cloudy"
+  },
+  {
+    "id": 10,
+    "name": "IoT_10",
+    "Humidity": 51,
+    "Temperature": 98,
+    "Weather": "Hahaha, You are so funny"
+  },
+  {
+    "id": 15,
+    "name": "IoT_15",
+    "Humidity": 280,
+    "Temperature": 480,
+    "Weather": "Dirty"
   }
 ]
