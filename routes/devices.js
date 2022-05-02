@@ -22,10 +22,12 @@ router.get("/:deviceNumber", (req, res) => {
 
 //Post Routes
 router.post("/", (req, res) => {
-  res.header("Access-Control-Allow-Origin", "*");
+  // res.header("Access-Controlac-Allow-Origin", "*");
   const iot = req.body;
   const deviceWithId = { ...iot, deviceId: uuidv4() };
-  res.send(`Device with the name of ${iot.name} added to the database!!!`);
+  res.send(
+    `Device with the name of ${iot.name} added to the database!!! ${deviceWithId.name}`
+  );
   importData.push(deviceWithId);
 });
 
@@ -52,7 +54,5 @@ router.delete("/:deviceNumber", (req, res) => {
     message: "Deleted product!"
   });
 });
-
-console.log(importData);
 
 module.exports = router;

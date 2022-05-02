@@ -7,7 +7,14 @@ let port = process.env.PORT || 3000;
 const devicesRoutes = require("./routes/devices");
 
 // middleware
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"]
+  })
+);
 app.use("/devices", devicesRoutes);
 
 app.get("/", (req, res) => {
