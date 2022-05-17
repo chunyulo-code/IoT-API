@@ -2,10 +2,16 @@
 
 > Creating a API for IoT devices
 
-####The Link below is the API entrance of our IoT devices
+`API Documentation`
+https://chunyuloandylo.docs.apiary.io/#reference
+![API Documentation](./assets/images/iotDocumentation.png)
+
+---
+
+`The Link below is the API entrance of our IoT devices`
 https://iotapinodejs.herokuapp.com/
 
-####All Devices Data
+`All Devices Data`
 https://iotapinodejs.herokuapp.com/devices
 
 ![All Devices Data](./assets/images/iotDevicesDataJson.png)
